@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webapplication2:
+    image: username/webapplication2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"

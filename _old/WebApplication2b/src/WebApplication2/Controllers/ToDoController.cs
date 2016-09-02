@@ -12,8 +12,6 @@ namespace ToDoApi.Controllers
         public ToDoController(IToDoRepository todoItems)
         {
 
-
-
             DBTest test = new DBTest();
             string ctn = test.GetCarton();
 

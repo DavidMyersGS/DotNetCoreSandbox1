@@ -3,22 +3,17 @@
     "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.0.0-preview2-final"
   },
   "frameworks": {
-    "net451": {
-      "frameworkAssemblies": {
-        "System.Data": "4.0.0.0",
-        "System.Data.DataSetExtensions": "4.0.0.0"
-      },
-      "netcoreapp1.0": {
-        "imports": [
-          "dotnet5.6",
-          "portable-net45+win8"
-        ]
-      }
+    "netcoreapp1.0": {
+      "imports": [
+        "dotnet5.6",
+        "portable-net45+win8"
+      ]
     }
   },
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "debugType": "portable"
   },
   "runtimeOptions": {
     "configProperties": {
@@ -31,12 +26,18 @@
       "Views",
       "Areas/**/Views",
       "appsettings.json",
-      "hosting.json",
-      "web.config"
+      "web.config",
+      "docker-compose.yml",
+      "docker-compose.debug.yml",
+      "Dockerfile.debug",
+      "Dockerfile",
+      ".dockerignore"
     ]
   },
   "scripts": {
-    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+    "postpublish": [
+      "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
+    ]
   },
   "userSecretsId": "aspnet-ToDoApi-20160830031902",
   "dependencies": {
@@ -46,7 +47,6 @@
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
     "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0",
-    "Moq": "4.5.21"
+    "Microsoft.Extensions.Configuration.Json": "1.0.0"
   }
 }
