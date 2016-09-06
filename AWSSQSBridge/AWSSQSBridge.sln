@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSSQSBridge", "AWSSQSBridge\AWSSQSBridge.csproj", "{4C06903F-0A86-4B35-BD37-302E108363F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWSHelper", "AWSHelper\AWSHelper.csproj", "{5BD6D0FD-71D7-4EC8-8224-67978C274F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkGeekDataContracts", "ThinkGeekDataContracts\ThinkGeekDataContracts.csproj", "{4368BB0E-B8ED-47F5-B455-882203AC12B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C06903F-0A86-4B35-BD37-302E108363F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C06903F-0A86-4B35-BD37-302E108363F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C06903F-0A86-4B35-BD37-302E108363F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C06903F-0A86-4B35-BD37-302E108363F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD6D0FD-71D7-4EC8-8224-67978C274F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD6D0FD-71D7-4EC8-8224-67978C274F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD6D0FD-71D7-4EC8-8224-67978C274F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD6D0FD-71D7-4EC8-8224-67978C274F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4368BB0E-B8ED-47F5-B455-882203AC12B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4368BB0E-B8ED-47F5-B455-882203AC12B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4368BB0E-B8ED-47F5-B455-882203AC12B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4368BB0E-B8ED-47F5-B455-882203AC12B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
