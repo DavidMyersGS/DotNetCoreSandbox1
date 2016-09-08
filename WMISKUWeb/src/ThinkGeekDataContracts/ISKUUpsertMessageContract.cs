@@ -8,11 +8,11 @@ namespace GameStop.SupplyChain.ThinkGeekDataContracts
 {
     public interface ISKUUpsertMessageContract : IMessageContract
     {
-        string sku { get; set; }
-        string product_id { get; set; }
-        string product_name { get; set; }
-        string product_category { get; set; }
-        string sku_name { get; set; }
+        string SKU { get; set; }
+        string ProductID { get; set; }
+        string ProductName { get; set; }
+        string ProductCategory { get; set; }
+        string SKUName { get; set; }
 
         IDimensions Dimensions { get; set; }
 

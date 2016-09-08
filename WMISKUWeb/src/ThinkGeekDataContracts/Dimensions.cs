@@ -2,34 +2,31 @@
 
 namespace GameStop.SupplyChain.ThinkGeekDataContracts
 {
-    public class Dimensions
+    [DataContract]
+    public class Dimensions : IDimensions
     {
+        [DataMember(Name = "weight", IsRequired = true)]
         public string weight { get; set; }
-
+        [DataMember(Name = "weight_override", IsRequired = true)]
         public string weight_override { get; set; }
-
+        [DataMember(Name = "length", IsRequired = true)]
         public string length { get; set; }
-
+        [DataMember(Name = "height", IsRequired = true)]
         public string height { get; set; }
-
+        [DataMember(Name = "depth", IsRequired = true)]
         public string depth { get; set; }
-
+        [DataMember(Name = "volume", IsRequired = true)]
         public string volume { get; set; }
-
+        [DataMember(Name = "case_weight", IsRequired = true)]
         public string case_weight { get; set; }
-
+        [DataMember(Name = "case_length", IsRequired = true)]
         public string case_length { get; set; }
-
+        [DataMember(Name = "case_height", IsRequired = true)]
         public string case_height { get; set; }
-
+        [DataMember(Name = "case_depth", IsRequired = true)]
         public string case_depth { get; set; }
-
+        [DataMember(Name = "case_volume", IsRequired = true)]
         public string case_volume { get; set; }
-
-        public Dimensions()
-        {
-
-        }
 
         public Dimensions(bool initDefaults = false)
         {

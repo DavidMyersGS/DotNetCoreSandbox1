@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:11005/",
+      "applicationUrl": "http://localhost:52476/",
       "sslPort": 0
     }
   },
@@ -11,15 +11,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/sku",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "WMISKUSvc": {
-      "commandName": "IISExpress",
+    "WMISKUWeb": {
+      "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:11005/api/values",
+      "launchUrl": "http://localhost:5000/api/sku",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

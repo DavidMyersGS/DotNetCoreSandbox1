@@ -2,17 +2,16 @@
 
 namespace GameStop.SupplyChain.ThinkGeekDataContracts
 {
-    public class MessageTarget
+    [DataContract]
+    public class MessageTarget : IMessageTarget
     {
+        [DataMember(Name = "company", IsRequired = true)]
         public string Company { get; set; }
 
+        [DataMember(Name = "warehouse", IsRequired = true)]
         public string Warehouse { get; set; }
 
+        [DataMember(Name = "brand", IsRequired = true)]
         public string Brand { get; set; }
-
-        public MessageTarget()
-        {
-            
-        }
     }
 }

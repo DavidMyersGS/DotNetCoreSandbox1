@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C06903F-0A86-4B35-BD37-302E108363F5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{4368BB0E-B8ED-47F5-B455-882203AC12B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AWSSQSBridge</RootNamespace>
-    <AssemblyName>AWSSQSBridge</AssemblyName>
+    <RootNamespace>GameStop.SupplyChain.ThinkGeekDataContracts</RootNamespace>
+    <AssemblyName>ThinkGeekDataContracts</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,18 +29,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>GameStop.SupplyChain.AWSSQSBridge.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AWSSDK.Core">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AWS SDK for .NET\bin\Net45\AWSSDK.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="AWSSDK.SQS">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\AWS SDK for .NET\bin\Net45\AWSSDK.SQS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
@@ -54,24 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Dimensions.cs" />
+    <Compile Include="Identifiers.cs" />
+    <Compile Include="IDimensions.cs" />
+    <Compile Include="IMessageContract.cs" />
+    <Compile Include="IMessageTarget.cs" />
+    <Compile Include="IIdentifiers.cs" />
+    <Compile Include="ISKUUpsertMessageContract.cs" />
+    <Compile Include="MessageTarget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AWSHelper\AWSHelper.csproj">
-      <Project>{5bd6d0fd-71d7-4ec8-8224-67978c274f56}</Project>
-      <Name>AWSHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ThinkGeekDataContracts\ThinkGeekDataContracts.csproj">
-      <Project>{4368bb0e-b8ed-47f5-b455-882203ac12b2}</Project>
-      <Name>ThinkGeekDataContracts</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <Compile Include="SKUUpsertMessageContract.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

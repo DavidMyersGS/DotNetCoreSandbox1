@@ -9,10 +9,5 @@ namespace GameStop.SupplyChain.ThinkGeekDataContracts
         public string Warehouse { get; set; }
 
         public string Brand { get; set; }
-
-        public MessageTarget()
-        {
-            
-        }
     }
 }
