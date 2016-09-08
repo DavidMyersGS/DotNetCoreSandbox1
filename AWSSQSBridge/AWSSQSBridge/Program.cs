@@ -4,7 +4,7 @@ using System.Configuration;
 using Amazon.SQS;
 using Amazon.SQS.Model;
 using GameStop.SupplyChain.AWSHelper;
-using GameStop.SupplyChain.ThinkGeekDataContracts;
+using GameStop.SupplyChain.DataContracts.ThinkGeek;
 using System.Net.Http;
 using System.Net;
 

@@ -31,7 +31,7 @@ namespace WMISKUWeb.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]SKUUpsertMessageContract value)
         {
-            SKUUpsertMessageContract message = new SKUUpsertMessageContract();
+            //SKUUpsertMessageContract message = new SKUUpsertMessageContract();
 
             //message = (SKUUpsertMessageContract)value.ToObject(message.GetType());
 

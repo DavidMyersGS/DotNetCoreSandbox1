@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace GameStop.SupplyChain.ThinkGeekDataContracts
+﻿namespace GameStop.SupplyChain.DataContracts.ThinkGeek
 {
     public class Dimensions
     {
