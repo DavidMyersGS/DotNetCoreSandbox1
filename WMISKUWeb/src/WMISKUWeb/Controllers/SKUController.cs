@@ -1,22 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using GameStop.SupplyChain.ThinkGeekDataContracts;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using GameStop.SupplyChain.DataContracts.ThinkGeek;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using WMISKUWeb.Models;
 
-namespace WMISKUWeb.Controllers
+namespace GameStop.SupplyChain.Services.WMISKUWeb.Controllers
 {
     [Route("api/[controller]")]
     public class SKUController : Controller
     {
+        private IConfiguration _config;
+        private ILogger<SKUController> _logger;
 
-        public SKUController()
+        public SKUController(IConfiguration config, ILogger<SKUController> logger)
         {
-            
+            _config = config;
+            _logger = logger;
         }
 
         //// GET api/values
         [HttpGet]
         public string Get()
         {
+            _logger.LogInformation("HTTP GET Invoked @ {requestTime}", DateTime.Now);
             return "AVAILABLE";
         }
 
@@ -31,17 +38,13 @@ namespace WMISKUWeb.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]SKUUpsertMessageContract value)
         {
-            //SKUUpsertMessageContract message = new SKUUpsertMessageContract();
-
-            //message = (SKUUpsertMessageContract)value.ToObject(message.GetType());
-
             string json = JSONHelper.ObjectToJSON(value);
 
             DataLayer dl = new DataLayer();
 
-            dl.SubmitSKU(json);
+            dl.InsertSKU(json);
 
-            return Json("Message Received: " + message.ID);
+            return Json("Message Received: " + value.ID);
         }
 
         //// PUT api/values/5

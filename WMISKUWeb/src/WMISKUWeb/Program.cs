@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 
-namespace WMISKUWeb
+namespace GameStop.SupplyChain.Services.WMISKUWeb
 {
     public class Program
     {

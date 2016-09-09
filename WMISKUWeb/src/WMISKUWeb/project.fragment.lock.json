@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "DataContracts.ThinkGeek/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

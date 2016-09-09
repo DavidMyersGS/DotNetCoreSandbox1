@@ -87,6 +87,10 @@ namespace GameStop.SupplyChain.AWSSQSBridge
                 Console.ReadKey();
             }
 
+            Console.WriteLine("AWS environment ready.\n");
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();
+
             GetQueueUrlResponse awsGQUR = sqsClient.GetQueueUrl(sqsQueueName);
 
             Console.WriteLine("Creating test messages...");
@@ -100,7 +104,7 @@ namespace GameStop.SupplyChain.AWSSQSBridge
             Console.WriteLine("GET Received: {0}", response);
             Console.WriteLine("Press any key...");
             Console.ReadKey();
-
+            
             //string awsMessage = GetMessage(awsSQSWrapper, awsGQUR.QueueUrl);
 
             bool continueReceiving = true;
@@ -163,8 +167,25 @@ namespace GameStop.SupplyChain.AWSSQSBridge
             skuMessage.ProductName = "Harry Potter House Flag";
             skuMessage.ProductCategory = "Accessories";
             skuMessage.ProductName = "Hufflepuff";
-            skuMessage.Dimensions = new Dimensions(true);
-            skuMessage.Identifiers = new Identifiers(true);
+            skuMessage.Dimensions = new Dimensions();
+            skuMessage.Dimensions.weight = ".45";
+            skuMessage.Dimensions.weight_override = "0";
+            skuMessage.Dimensions.length = "17";
+            skuMessage.Dimensions.height = ".5";
+            skuMessage.Dimensions.depth = "10";
+            skuMessage.Dimensions.volume = "85";
+            skuMessage.Dimensions.case_weight = "4.5";
+            skuMessage.Dimensions.case_length = "170";
+            skuMessage.Dimensions.case_height = "5";
+            skuMessage.Dimensions.case_depth = "100";
+            skuMessage.Dimensions.case_volume = "8500";
+            skuMessage.Identifiers = new Identifiers();
+            skuMessage.Identifiers.upc_1 = "618480236309";
+            skuMessage.Identifiers.upc_2 = "";
+            skuMessage.Identifiers.ean = "";
+            skuMessage.Identifiers.jan = "";
+            skuMessage.Identifiers.isbn = "";
+            skuMessage.Identifiers.warehoue_barcode = "0EDD1H";
 
             int i = 0;
             for (i = 1; i <= messageCount; i++)

@@ -1,4 +1,4 @@
-﻿{
+{
   "dependencies": {
     "Microsoft.AspNetCore.Mvc": "1.0.0",
     "Microsoft.AspNetCore.Hosting": "1.0.0",
@@ -10,7 +10,8 @@
     "Microsoft.Extensions.Logging": "1.0.0",
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
-    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0"
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
+    "log4net": "2.0.5"
   },
 
   "tools": {
@@ -19,6 +20,11 @@
 
   "frameworks": {
     "net452": {
+      "dependencies": {
+        "DataContracts.ThinkGeek": {
+          "target": "project"
+        }
+      },
       "frameworkAssemblies": {
         "System.Data": "4.0.0.0",
         "System.Runtime.Serialization": "4.0.0.0"

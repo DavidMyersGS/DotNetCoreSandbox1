@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.Odbc;
-using GameStop.SupplyChain.ThinkGeekDataContracts;
+using GameStop.SupplyChain.DataContracts.ThinkGeek;
 
 namespace WMISKUWeb.Models
 {
@@ -15,7 +15,7 @@ namespace WMISKUWeb.Models
 
         }
 
-        public int SubmitSKU(string json)
+        public int InsertSKU(string json)
         {
             SKUUpsertMessageContract obj = new SKUUpsertMessageContract();
 
