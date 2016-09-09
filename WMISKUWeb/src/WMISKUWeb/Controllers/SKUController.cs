@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using GameStop.SupplyChain.DataContracts.ThinkGeek;
+using GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using WMISKUWeb.Models;
@@ -44,7 +44,7 @@ namespace GameStop.SupplyChain.Services.WMISKUWeb.Controllers
 
             dl.InsertSKU(json);
 
-            return Json("Message Received: " + value.ID);
+            return Json("Message Received: " + value.GUID);
         }
 
         //// PUT api/values/5

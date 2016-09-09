@@ -1,4 +1,4 @@
-﻿namespace GameStop.SupplyChain.DataContracts.ThinkGeek
+﻿namespace GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert
 {
     public class Identifiers
     {

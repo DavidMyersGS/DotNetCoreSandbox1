@@ -7,8 +7,8 @@
     <ProjectGuid>{4368BB0E-B8ED-47F5-B455-882203AC12B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GameStop.SupplyChain.ThinkGeekDataContracts</RootNamespace>
-    <AssemblyName>GameStop.SupplyChain.DataContracts.ThinkGeek</AssemblyName>
+    <RootNamespace>GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert</RootNamespace>
+    <AssemblyName>GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,11 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Costs.cs" />
     <Compile Include="Dimensions.cs" />
     <Compile Include="Identifiers.cs" />
-    <Compile Include="MessageTarget.cs" />
+    <Compile Include="Layout.cs" />
+    <Compile Include="MessageMetadata.cs" />
+    <Compile Include="Pricing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SKUCopy.cs" />
     <Compile Include="SKUUpsertMessageContract.cs" />
+    <Compile Include="Storefront.cs" />
+    <Compile Include="Taxation.cs" />
+    <Compile Include="Timestamps.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="Warehouse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

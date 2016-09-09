@@ -1,17 +1,17 @@
 {
   "version": 2,
   "exports": {
-    "DataContracts.ThinkGeek/1.0.0": {
+    "DataContracts.ThinkGeek.SKUUpsert/1.0.0": {
       "type": "project",
       "framework": ".NETFramework,Version=v4.5.2",
       "compile": {
-        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.dll": {}
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.dll": {}
       },
       "runtime": {
-        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.dll": {}
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.pdb": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true

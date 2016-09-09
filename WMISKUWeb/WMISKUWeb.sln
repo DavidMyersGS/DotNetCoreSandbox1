@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WMISKUWeb", "src\WMISKUWeb\WMISKUWeb.xproj", "{051465DF-50B3-440E-9C9D-51B9DC5484B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts.ThinkGeek", "..\DataContracts.ThinkGeek\DataContracts.ThinkGeek\DataContracts.ThinkGeek.csproj", "{4368BB0E-B8ED-47F5-B455-882203AC12B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts.ThinkGeek.SKUUpsert", "..\DataContracts.ThinkGeek\DataContracts.ThinkGeek\DataContracts.ThinkGeek.SKUUpsert.csproj", "{4368BB0E-B8ED-47F5-B455-882203AC12B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

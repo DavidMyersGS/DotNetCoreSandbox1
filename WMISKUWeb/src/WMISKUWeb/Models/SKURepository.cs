@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GameStop.SupplyChain.DataContracts.ThinkGeek;
+using GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert;
 
 namespace GameStop.SupplyChain.WMISKUWeb.Models
 {

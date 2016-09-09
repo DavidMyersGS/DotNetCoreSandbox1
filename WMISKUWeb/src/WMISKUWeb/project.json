@@ -21,9 +21,10 @@
   "frameworks": {
     "net452": {
       "dependencies": {
-        "DataContracts.ThinkGeek": {
+        "DataContracts.ThinkGeek.SKUUpsert": {
           "target": "project"
         }
+
       },
       "frameworkAssemblies": {
         "System.Data": "4.0.0.0",

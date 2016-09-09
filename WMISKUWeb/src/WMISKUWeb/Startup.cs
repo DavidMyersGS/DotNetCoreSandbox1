@@ -19,7 +19,7 @@ namespace GameStop.SupplyChain.Services.WMISKUWeb
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
-
+            
             log4net.GlobalContext.Properties["appRoot"] = Configuration["AppSettings:LogFilePath"].ToString();
             XmlConfigurator.Configure(new FileInfo(Path.Combine(env.ContentRootPath, Configuration["AppSettings:LogSettingsFile"].ToString())));
         }
@@ -32,9 +32,9 @@ namespace GameStop.SupplyChain.Services.WMISKUWeb
             // Add framework services.
             services.AddMvc();
             services.AddSingleton<IConfiguration>(Configuration);
+            //services.AddSingleton<IRepository>();
             //services.AddTransient<ISKUUpsertMessageContract, SKUUpsertMessageContract>();
             services.AddLogging();
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
