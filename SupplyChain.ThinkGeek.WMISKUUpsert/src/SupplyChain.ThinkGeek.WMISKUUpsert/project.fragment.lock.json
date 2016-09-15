@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "exports": {
+    "AWSHelper/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/AWSHelper.dll": {}
+      },
+      "runtime": {
+        "../../../../../../../Program Files (x86)/AWS SDK for .NET/bin/Net45/AWSSDK.Core.dll": {},
+        "../../../../../../../Program Files (x86)/AWS SDK for .NET/bin/Net45/AWSSDK.SQS.dll": {},
+        "bin/Debug/AWSHelper.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/AWSHelper.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "DataContracts.ThinkGeek.SKUUpsert/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.5.2",
+      "compile": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/GameStop.SupplyChain.DataContracts.ThinkGeek.SKUUpsert.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

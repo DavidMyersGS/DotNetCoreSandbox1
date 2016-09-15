@@ -1,0 +1,36 @@
+﻿{
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0",
+    "Amazon.SQS.ExtendedClient": "0.2.1"
+  },
+
+  "frameworks": {
+    "net452": {
+      "dependencies": {
+        "AWSHelper": {
+          "target": "project"
+        },
+        "DataContracts.ThinkGeek.SKUUpsert": {
+          "target": "project"
+        }
+      },
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0",
+        "System.Runtime.Serialization": "4.0.0.0",
+        "System.Net": "4.0.0.0",
+        "System.Net.Http": "4.0.0.0",
+        "System.Configuration": "4.0.0.0"
+      }
+    }
+  }
+}

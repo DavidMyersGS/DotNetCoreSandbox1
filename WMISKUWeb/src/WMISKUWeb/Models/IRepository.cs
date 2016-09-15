@@ -6,7 +6,7 @@ namespace GameStop.SupplyChain.WMISKUWeb.Models
     {
         IEnumerable<T> List { get; }
 
-        void Insert(T obj);
+        void Create(T obj);
         void Delete(T obj);
         void Update(T obj);
         T FindById(int id);

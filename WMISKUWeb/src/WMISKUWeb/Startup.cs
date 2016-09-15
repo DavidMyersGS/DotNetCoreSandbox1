@@ -45,6 +45,7 @@ namespace GameStop.SupplyChain.Services.WMISKUWeb
             loggerFactory.AddProvider(new Log4NetProvider());
             
             app.UseMvc();
+            
         }
     }
 }

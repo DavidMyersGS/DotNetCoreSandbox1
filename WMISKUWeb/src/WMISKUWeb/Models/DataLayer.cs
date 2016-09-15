@@ -7,7 +7,7 @@ namespace WMISKUWeb.Models
 {
     public class DataLayer : IDataLayer
     {
-        private readonly string _dbConnectionString = "DRIVER=iSeries Access ODBC Driver;Database = D10984fb;PKG=QGPL/DEFAULT(IBM),2,0,1,0,512;LANGUAGEID = ENU;DFTPKGLIB = QGPL;DBQ = WMWQ1LOUDB;System = GV1DWH01;Uid=s_dwhodbc;Pwd=p955thru6rt;";
+        private readonly string _dbConnectionString = "DRIVER=iSeries Access ODBC Driver;Database = D10984fb;PKG=QGPL/DEFAULT(IBM),2,0,1,0,512;LANGUAGEID = ENU;DFTPKGLIB = QGPL;DBQ = WMWQ1LOUDB;System = GV1DWH01;Uid=s_dwhodbc;Pwd=p@55thru6rt;";
         private readonly string _sqlToExecute = "CALL WMWD1LOUDC.GS_I5INPT00_INSERT(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
         public DataLayer()

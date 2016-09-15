@@ -19,7 +19,7 @@ namespace GameStop.SupplyChain.WMISKUWeb.Models
             }
         }
 
-        public void Insert(SKUUpsertMessageContract obj)
+        public void Create(SKUUpsertMessageContract obj)
         {
             throw new NotImplementedException();
         }

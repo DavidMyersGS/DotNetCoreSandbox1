@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SupplyChain.ThinkGeek.WMISKUUpsert": {
+      "commandName": "Project",
+      "commandLineArgs": "SKU_UPSERT"
+    }
+  }
+}
